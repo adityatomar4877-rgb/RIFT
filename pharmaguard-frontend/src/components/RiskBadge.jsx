@@ -6,8 +6,16 @@ const RISK_CONFIG = {
   'Unknown':      { bg: 'bg-gray-800/40',   border: 'border-gray-600',   text: 'text-gray-300',   dot: 'bg-gray-400' },
 }
 
-export default function RiskBadge({ label }) {
+// compact=true → just the coloured dot, no text (used in tab bar)
+export default function RiskBadge({ label, compact = false }) {
   const cfg = RISK_CONFIG[label] || RISK_CONFIG['Unknown']
+
+  if (compact) {
+    return (
+      <span className={`inline-block w-2 h-2 rounded-full ${cfg.dot}`} title={label} />
+    )
+  }
+
   return (
     <span className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full border text-sm font-semibold
                       ${cfg.bg} ${cfg.border} ${cfg.text}`}>
