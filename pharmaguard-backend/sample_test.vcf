@@ -1,0 +1,26 @@
+##fileformat=VCFv4.2
+##fileDate=20260219
+##source=PharmaGuard_SampleData
+##reference=hg19
+##contig=<ID=chr10,length=135534747>
+##contig=<ID=chr22,length=51304566>
+##contig=<ID=chr6,length=171115067>
+##contig=<ID=chr18,length=78077248>
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Total Depth">
+##INFO=<ID=AF,Number=A,Type=Float,Description="Allele Frequency">
+##INFO=<ID=GENE,Number=1,Type=String,Description="Gene Name">
+##INFO=<ID=STAR,Number=1,Type=String,Description="Star Allele">
+##INFO=<ID=CLINVAR,Number=1,Type=String,Description="ClinVar ID">
+##INFO=<ID=CLINSIG,Number=1,Type=String,Description="Clinical Significance">
+##FILTER=<ID=LowQual,Description="Quality below 30">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=AD,Number=R,Type=Integer,Description="Allelic Depths">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Read Depth">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	SAMPLE1
+chr10	94981296	rs1799853	C	T	99	PASS	DP=150;AF=0.50;GENE=CYP2C9;STAR=*2;CLINVAR=rs1799853;CLINSIG=Pathogenic	GT:AD:DP	0/1:75,75:150
+chr10	94942290	rs1057910	A	C	95	PASS	DP=180;AF=0.01;GENE=CYP2C9;STAR=*3;CLINVAR=rs1057910;CLINSIG=Pathogenic	GT:AD:DP	0/0:180,2:182
+chr22	42522613	rs3892097	G	A	88	PASS	DP=200;AF=0.45;GENE=CYP2D6;STAR=*4;CLINVAR=rs3892097;CLINSIG=Pathogenic	GT:AD:DP	0/1:110,90:200
+chr10	96741053	rs4244285	G	A	92	PASS	DP=165;AF=0.50;GENE=CYP2C19;STAR=*2;CLINVAR=rs4244285;CLINSIG=Pathogenic	GT:AD:DP	0/1:82,83:165
+chr12	21178615	rs4149056	T	C	90	PASS	DP=140;AF=0.12;GENE=SLCO1B1;STAR=*5;CLINVAR=rs4149056;CLINSIG=Pathogenic	GT:AD:DP	0/1:88,52:140
+chr6	18128553	rs1142345	T	C	96	PASS	DP=210;AF=0.30;GENE=TPMT;STAR=*3C;CLINVAR=rs1142345;CLINSIG=Pathogenic	GT:AD:DP	0/1:147,63:210
+chr1	97915614	rs3918290	C	T	94	PASS	DP=190;AF=0.005;GENE=DPYD;STAR=*2A;CLINVAR=rs3918290;CLINSIG=Pathogenic	GT:AD:DP	0/1:96,4:100
